@@ -12,6 +12,6 @@ const router = Router();
 
 router.post('/createBucket', CloudController.createBucket);
 
-router.post('/createBucket', CloudController.createBucket);
+router.delete('/deleteBucket', CloudController.deleteBucket);
 
 export default router;
