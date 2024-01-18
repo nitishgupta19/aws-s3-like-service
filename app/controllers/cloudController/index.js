@@ -31,6 +31,10 @@ router.delete('/deleteObject', authMiddeleware(), CloudController.deleteObject);
 router.post('/listObject', authMiddeleware(), CloudController.listObject);
 
 // Detail Object/File of the User
-router.post('/detailObject', authMiddeleware(), CloudController.detailObject);
+router.get(
+  '/detailObject/:objectId',
+  authMiddeleware(),
+  CloudController.detailObject
+);
 
 export default router;
