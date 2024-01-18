@@ -6,8 +6,10 @@ import createAuthenticationSchema from '../../validations/entity.validation';
 
 const router = Router();
 
+// Api endpoint to register user
 router.post('/signup', createAuthenticationSchema, AuthController.signup);
+
+// Api endpoint to login user
 router.post('/login', createAuthenticationSchema, AuthController.login);
-router.post('/logout', AuthController.logout);
 
 export default router;
