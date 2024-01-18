@@ -74,7 +74,7 @@ class AuthController {
             } else {
               let accessKey =
                 Math.floor(Math.random() * 1000000 + 1) +
-                '_sndk-task_' +
+                '_mysecret_' +
                 date.getTime();
 
               await AuthService.updateUserAccessKey(
