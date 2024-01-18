@@ -28,6 +28,7 @@ class ExpressApp {
     this.app.use('/public', express.static('public'));
     this.app.use(cors());
     this.app.use('/', Routes);
+    this.app.use('/cloudStorage', express.static('cloudStorage'));
     this.app.use((req, res, next) => {
       next(createError(404));
     });

@@ -3,7 +3,7 @@ const knex = require('knex');
 
 /* knex query generator implementation */
 const db = knex({
-  client: process.env.DB_CLIENT,
+  client: process.env.DB_CLIENT || 'mysql',
   connection: {
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
