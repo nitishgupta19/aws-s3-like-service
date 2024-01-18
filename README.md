@@ -40,22 +40,22 @@ Package Manager: npm v10.2.5
 MySql: version v5.7.40
 ```
 
-#### 1. Clone the Project
+#### 2. Clone the Project
 
 ```bash
 git clone https://github.com/your-username/your-project.git
 cd your-project
 ```
 
-#### 2. Import Database
+#### 3. Import Database
 
 Use the provided database file in this repository to import database `cloud_service.sql`
 
-#### 3. Import Postman Collection
+#### 4. Import Postman Collection
 
 Import the provided Postman collection `AWS S3 Like Service.postman_collection` to quickly test and interact with the project's API endpoints. The collection includes sample requests for various scenarios.
 
-#### 4. Run the Project
+#### 5. Run the Project
 
 Before running the project, make sure to install the required dependencies.
 
